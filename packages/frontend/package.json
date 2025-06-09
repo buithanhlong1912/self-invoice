@@ -1,0 +1,38 @@
+{
+  "name": "@self-invoice/frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build && next export",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "14.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "axios": "^1.6.0",
+    "jspdf": "^2.5.1",
+    "html2canvas": "^1.4.1",
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
+    "react-hook-form": "^7.48.2",
+    "react-hot-toast": "^2.4.1",
+    "clsx": "^2.0.0",
+    "typescript": "^5.3.3",
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "tailwindcss": "^3.3.6",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "lucide-react": "^0.263.1",
+    "@hookform/resolvers": "^3.1.1",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.54.0",
+    "eslint-config-next": "14.0.3"
+  }
+} 

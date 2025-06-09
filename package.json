@@ -1,0 +1,27 @@
+{
+  "name": "self-invoice",
+  "version": "1.0.0",
+  "description": "Hệ thống quản lý cửa hàng và xuất hóa đơn",
+  "private": true,
+  "workspaces": [
+    "packages/backend",
+    "packages/frontend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "npm run dev --workspace=packages/backend",
+    "dev:frontend": "npm run dev --workspace=packages/frontend",
+    "build": "npm run build --workspace=packages/backend && npm run build --workspace=packages/frontend",
+    "start": "npm run start --workspace=packages/backend",
+    "start:frontend": "npm run start --workspace=packages/frontend",
+    "install:all": "npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.3"
+  },
+  "keywords": ["invoice", "store-management", "monorepo"],
+  "author": "",
+  "license": "MIT"
+} 

@@ -10,7 +10,7 @@ const nextConfig = {
         destination:
           process.env.NODE_ENV === "production"
             ? `${process.env.NEXT_PUBLIC_API_URL}/:path*`
-            : "http://localhost:5002/api/:path*",
+            : "http://localhost:5001/api/:path*",
       },
     ];
   },
